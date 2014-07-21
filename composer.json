@@ -1,5 +1,6 @@
 {
     "require": {
-        "yiisoft/jquery": "1.*"
+        "yiisoft/jquery": "1.*",
+        "dongww/semantic": "dev-master"
     }
 }
