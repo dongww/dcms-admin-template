@@ -1,0 +1,8 @@
+body {
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif, "微软雅黑";
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    color: #555555;
+    background: #FCFCFC url(../images/bg.jpg) repeat;
+}

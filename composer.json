@@ -1,0 +1,5 @@
+{
+    "require": {
+        "yiisoft/jquery": "1.*"
+    }
+}
