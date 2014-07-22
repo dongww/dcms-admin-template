@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8"/>
     <title></title>
-    <link rel="stylesheet" type="text/css" class="ui" href="vendor/dongww/semantic/css/semantic.min.css">
-    <link rel="stylesheet" type="text/css" class="ui" href="resources/css/dcms-admin.css">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <script src="vendor/yiisoft/jquery/jquery.min.js"></script>
     <script src="vendor/dongww/semantic/javascript/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" class="ui" href="vendor/dongww/semantic/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="resources/css/dcms-admin.css">
 </head>
-<body>
-<div class="ui thin vertical inverted labeled icon sidebar menu active"></div>
+<body id="dcms" class="">
+<!--左侧侧边栏-->
+<div class="ui thin vertical inverted labeled icon sidebar menu">
+    <div class="item">
+        <i class="home icon"></i>
+        <strong>首页</strong>
+    </div>
+    <div class="item">
+        <b>商品管理</b>
+
+        <div class="menu">
+            <a class="item" href="#">商品列表</a>
+            <a class="item" href="#">新增商品</a>
+        </div>
+    </div>
+    <div class="item">
+        <b>商品管理</b>
+
+        <div class="menu">
+            <a class="item" href="#">商品列表</a>
+            <a class="item" href="#">新增商品</a>
+        </div>
+    </div>
+</div>
+<!--顶部菜单条-->
+<div class="ui fixed transparent inverted main menu">
+    <div class="container">
+        <a class="launch item">
+            <i class="icon list layout"></i>
+        </a>
+
+        <div class="right menu">
+            <div class="ui dropdown item">
+                <i class="user icon"></i>张三 [管理员]<i class="icon dropdown"></i>
+
+                <div class="menu">
+                    <a class="item"><i class="edit icon"></i>修改资料</a>
+                    <a class="item"><i class="globe icon"></i>修改密码</a>
+                    <a class="item"><i class="settings icon"></i>退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体内容-->
+<div class="main container">
+    <!--导航条-->
+    <div class="ui breadcrumb">
+        <div class="block">
+            <a class="section">管理系统</a>
+
+            <div class="divider"> /</div>
+            <a class="section">商品</a>
+
+            <div class="divider"> /</div>
+            <div class="active section">新增</div>
+        </div>
+
+    </div>
+    <!--正文-->
+    <div class="block">
+        <p>测试界面</p>
+    </div>
+
+</div>
+
+<script src="resources/js/dcms.admin.js"></script>
 </body>
 </html>

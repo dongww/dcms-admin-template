@@ -1,8 +1,75 @@
-body {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif, "微软雅黑";
+body#dcms {
+    font-family: "微软雅黑", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     min-width: 320px;
     margin: 0;
     padding: 0;
     color: #555555;
     background: #FCFCFC url(../images/bg.jpg) repeat;
+}
+
+.ui.menu .item b {
+    color: #fff;
+}
+
+#dcms .launch.button {
+    position: fixed;
+    top: 63px;
+    z-index: 500;
+    width: 70px;
+}
+
+#dcms .ui.transparent.menu {
+    opacity: 0.95;
+}
+
+#dcms .main.menu {
+    min-width: 320px;
+    z-index: 900;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: margin 0.3s ease;
+    -moz-transition: margin 0.3s ease;
+    -o-transition: margin 0.3s ease;
+    -ms-transition: margin 0.3s ease;
+    transition: margin 0.3s ease;
+
+    top: 0;
+}
+
+#dcms .container{
+    margin: 0 auto;
+}
+
+.ui.breadcrumb{
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.main.container .block{
+    margin: 0 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .main.container .block{
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .main.container .block{
+        margin: 0 100px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .main.container .block{
+        margin: 0 200px;
+    }
 }
