@@ -1,33 +1,56 @@
 /**
  * Created by dongww on 14-7-22.
  */
-$('.ui.sidebar').sidebar({
+$window = $(window);
+$sidebar = $('.ui.sidebar');
+$menuContainer = $('.main.menu .container');
+$rightMenu = $('.right.menu');
+$dropdown = $('.ui.dropdown');
+
+var middleWidth = 1000;
+var smallWidth = 600;
+var sidebarWidth = 200;
+var menuMarginRight = 10;
+
+/**
+ * sidebar 相关
+ */
+$sidebar.sidebar({
     onShow: showSidebarAction,
     onHide: hideSidebarAction
 }).sidebar('attach events', '.launch.item');
 
-toggleSidebar($(window));
+function hideSidebarAction() {
+    $menuContainer.css('margin-right', menuMarginRight + 'px');
+    $rightMenu.show();
+}
 
-$(window).resize(function () {
+function showSidebarAction() {
+    $menuContainer.css('margin-right', sidebarWidth + menuMarginRight + 'px');
+    if ($window.width() <= smallWidth) {
+        $rightMenu.hide();
+    }
+}
+
+toggleSidebar();
+
+$window.resize(function () {
     toggleSidebar();
 });
 
 function toggleSidebar() {
-    if ($(window).width() < 998) {
-        $('.ui.sidebar').sidebar('hide');
+    if ($window.width() <= middleWidth) {
+        if ($sidebar.sidebar('is open')) {
+            $sidebar.sidebar('hide');
+        }
     } else {
-        $('.ui.sidebar').sidebar('show');
+        if ($sidebar.sidebar('is closed')) {
+            $sidebar.sidebar('show');
+        }
     }
 }
 
-function hideSidebarAction() {
-    $('.main.menu .container').css('margin-right', '10px');
-}
-
-function showSidebarAction() {
-    $('.main.menu .container').css('margin-right', '210px');
-}
-
-$('.ui.dropdown')
-    .dropdown()
-;
+/**
+ * 下拉列表或菜单
+ */
+$dropdown.dropdown();

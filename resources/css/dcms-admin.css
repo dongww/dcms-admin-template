@@ -1,6 +1,6 @@
 body#dcms {
     font-family: "微软雅黑", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    min-width: 320px;
+    /*min-width: 320px;*/
     margin: 0;
     padding: 0;
     color: #555555;
@@ -23,7 +23,7 @@ body#dcms {
 }
 
 #dcms .main.menu {
-    min-width: 320px;
+    /*min-width: 320px;*/
     z-index: 900;
 
     -webkit-box-sizing: border-box;
